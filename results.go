@@ -15,6 +15,7 @@ type mrdata struct {
 }
 
 type Race struct {
+	NoResults         bool
 	Circuit           Circuit
 	Date              ErgastDate
 	Time              ErgastTime
@@ -127,6 +128,10 @@ func SpecificResult(season int, round int) (Race, error) {
 		return Race{}, err
 	}
 
+	if len(d.Races) < 1 {
+		return Race{NoResults: true}, nil
+	}
+
 	return d.Races[0], nil
 }
 
@@ -150,6 +155,10 @@ func SpecificQualifying(season int, round int) (Race, error) {
 	err = xml.Unmarshal(b, &d)
 	if err != nil {
 		return Race{}, err
+	}
+
+	if len(d.Races) < 1 {
+		return Race{NoResults: true}, nil
 	}
 
 	return d.Races[0], nil
