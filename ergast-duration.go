@@ -7,11 +7,11 @@ import (
 	"time"
 )
 
-type ergastDuration struct {
+type ErgastDuration struct {
 	time.Duration
 }
 
-func (e *ergastDuration) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
+func (e *ErgastDuration) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	var v string
 
 	d.DecodeElement(&v, &start)
@@ -21,7 +21,7 @@ func (e *ergastDuration) UnmarshalXML(d *xml.Decoder, start xml.StartElement) er
 		return err
 	}
 
-	*e = ergastDuration{p}
+	*e = ErgastDuration{p}
 	return nil
 }
 

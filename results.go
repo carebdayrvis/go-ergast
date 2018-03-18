@@ -16,9 +16,11 @@ type mrdata struct {
 
 type Race struct {
 	Circuit     Circuit
-	Date        ergastDate
-	Time        ergastTime
+	Date        ErgastDate
+	Time        ErgastTime
 	RaceName    string
+	Season      int      `xml:"season,attr"`
+	Round       int      `xml:"round,attr"`
 	ResultsList []Result `xml:"ResultsList>Result"`
 }
 
@@ -40,7 +42,7 @@ type Result struct {
 }
 
 type Lap struct {
-	Time ergastDuration
+	Time ErgastDuration
 	Rank int `xml:"rank,attr"`
 	Lap  int `xml:"lap,attr"`
 
@@ -57,7 +59,7 @@ type Driver struct {
 	GivenName       string
 	FamilyName      string
 	Nationality     string
-	DateOfBirth     ergastDate
+	DateOfBirth     ErgastDate
 }
 
 type Constructor struct {

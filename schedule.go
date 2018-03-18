@@ -23,8 +23,6 @@ func SeasonSchedule(season int) ([]Race, error) {
 		return []Race{}, err
 	}
 
-	fmt.Println(string(b))
-
 	d := mrdata{}
 
 	err = xml.Unmarshal(b, &d)
