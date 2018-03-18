@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/schemas/mrd-1.4.xsl"?>
+<MRData xmlns="http://ergast.com/mrd/1.4" series="f1" url="http://ergast.com/api/f1/2018" limit="30" offset="0" total="21">
+	<RaceTable season="2018">
+		<Race season="2018" round="1" url="http://en.wikipedia.org/wiki/2018_Australian_Grand_Prix">
+			<RaceName>Australian Grand Prix</RaceName>
+			<Circuit circuitId="albert_park" url="http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit">
+				<CircuitName>Albert Park Grand Prix Circuit</CircuitName>
+				<Location lat="-37.8497" long="144.968">
+					<Locality>Melbourne</Locality>
+					<Country>Australia</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-03-25</Date>
+			<Time>05:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="2" url="http://en.wikipedia.org/wiki/2018_Bahrain_Grand_Prix">
+			<RaceName>Bahrain Grand Prix</RaceName>
+			<Circuit circuitId="bahrain" url="http://en.wikipedia.org/wiki/Bahrain_International_Circuit">
+				<CircuitName>Bahrain International Circuit</CircuitName>
+				<Location lat="26.0325" long="50.5106">
+					<Locality>Sakhir</Locality>
+					<Country>Bahrain</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-04-08</Date>
+			<Time>15:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="3" url="http://en.wikipedia.org/wiki/2018_Chinese_Grand_Prix">
+			<RaceName>Chinese Grand Prix</RaceName>
+			<Circuit circuitId="shanghai" url="http://en.wikipedia.org/wiki/Shanghai_International_Circuit">
+				<CircuitName>Shanghai International Circuit</CircuitName>
+				<Location lat="31.3389" long="121.22">
+					<Locality>Shanghai</Locality>
+					<Country>China</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-04-15</Date>
+			<Time>06:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="4" url="http://en.wikipedia.org/wiki/2018_Azerbaijan_Grand_Prix">
+			<RaceName>Azerbaijan Grand Prix</RaceName>
+			<Circuit circuitId="BAK" url="http://en.wikipedia.org/wiki/Baku_City_Circuit">
+				<CircuitName>Baku City Circuit</CircuitName>
+				<Location lat="40.3725" long="49.8533">
+					<Locality>Baku</Locality>
+					<Country>Azerbaijan</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-04-29</Date>
+			<Time>08:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="5" url="http://en.wikipedia.org/wiki/2018_Spanish_Grand_Prix">
+			<RaceName>Spanish Grand Prix</RaceName>
+			<Circuit circuitId="catalunya" url="http://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya">
+				<CircuitName>Circuit de Barcelona-Catalunya</CircuitName>
+				<Location lat="41.57" long="2.26111">
+					<Locality>Montmeló</Locality>
+					<Country>Spain</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-05-13</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="6" url="http://en.wikipedia.org/wiki/2018_Monaco_Grand_Prix">
+			<RaceName>Monaco Grand Prix</RaceName>
+			<Circuit circuitId="monaco" url="http://en.wikipedia.org/wiki/Circuit_de_Monaco">
+				<CircuitName>Circuit de Monaco</CircuitName>
+				<Location lat="43.7347" long="7.42056">
+					<Locality>Monte-Carlo</Locality>
+					<Country>Monaco</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-05-27</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="7" url="http://en.wikipedia.org/wiki/2018_Canadian_Grand_Prix">
+			<RaceName>Canadian Grand Prix</RaceName>
+			<Circuit circuitId="villeneuve" url="http://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve">
+				<CircuitName>Circuit Gilles Villeneuve</CircuitName>
+				<Location lat="45.5" long="-73.5228">
+					<Locality>Montreal</Locality>
+					<Country>Canada</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-06-10</Date>
+			<Time>18:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="8" url="http://en.wikipedia.org/wiki/2018_French_Grand_Prix">
+			<RaceName>French Grand Prix</RaceName>
+			<Circuit circuitId="ricard" url="http://en.wikipedia.org/wiki/Paul_Ricard_Circuit">
+				<CircuitName>Circuit Paul Ricard</CircuitName>
+				<Location lat="43.2506" long="5.79167">
+					<Locality>Le Castellet</Locality>
+					<Country>France</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-06-24</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="9" url="http://en.wikipedia.org/wiki/2018_Austrian_Grand_Prix">
+			<RaceName>Austrian Grand Prix</RaceName>
+			<Circuit circuitId="red_bull_ring" url="http://en.wikipedia.org/wiki/Red_Bull_Ring">
+				<CircuitName>Red Bull Ring</CircuitName>
+				<Location lat="47.2197" long="14.7647">
+					<Locality>Spielburg</Locality>
+					<Country>Austria</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-07-01</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="10" url="http://en.wikipedia.org/wiki/2018_British_Grand_Prix">
+			<RaceName>British Grand Prix</RaceName>
+			<Circuit circuitId="silverstone" url="http://en.wikipedia.org/wiki/Silverstone_Circuit">
+				<CircuitName>Silverstone Circuit</CircuitName>
+				<Location lat="52.0786" long="-1.01694">
+					<Locality>Silverstone</Locality>
+					<Country>UK</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-07-08</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="11" url="http://en.wikipedia.org/wiki/2018_German_Grand_Prix">
+			<RaceName>German Grand Prix</RaceName>
+			<Circuit circuitId="hockenheimring" url="http://en.wikipedia.org/wiki/Hockenheimring">
+				<CircuitName>Hockenheimring</CircuitName>
+				<Location lat="49.3278" long="8.56583">
+					<Locality>Hockenheim</Locality>
+					<Country>Germany</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-07-22</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="12" url="http://en.wikipedia.org/wiki/2018_Hungarian_Grand_Prix">
+			<RaceName>Hungarian Grand Prix</RaceName>
+			<Circuit circuitId="hungaroring" url="http://en.wikipedia.org/wiki/Hungaroring">
+				<CircuitName>Hungaroring</CircuitName>
+				<Location lat="47.5789" long="19.2486">
+					<Locality>Budapest</Locality>
+					<Country>Hungary</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-07-29</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="13" url="http://en.wikipedia.org/wiki/2018_Belgian_Grand_Prix">
+			<RaceName>Belgian Grand Prix</RaceName>
+			<Circuit circuitId="spa" url="http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps">
+				<CircuitName>Circuit de Spa-Francorchamps</CircuitName>
+				<Location lat="50.4372" long="5.97139">
+					<Locality>Spa</Locality>
+					<Country>Belgium</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-08-26</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="14" url="http://en.wikipedia.org/wiki/2018_Italian_Grand_Prix">
+			<RaceName>Italian Grand Prix</RaceName>
+			<Circuit circuitId="monza" url="http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza">
+				<CircuitName>Autodromo Nazionale di Monza</CircuitName>
+				<Location lat="45.6156" long="9.28111">
+					<Locality>Monza</Locality>
+					<Country>Italy</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-09-02</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="15" url="http://en.wikipedia.org/wiki/2018_Singapore_Grand_Prix">
+			<RaceName>Singapore Grand Prix</RaceName>
+			<Circuit circuitId="marina_bay" url="http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit">
+				<CircuitName>Marina Bay Street Circuit</CircuitName>
+				<Location lat="1.2914" long="103.864">
+					<Locality>Marina Bay</Locality>
+					<Country>Singapore</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-09-16</Date>
+			<Time>12:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="16" url="http://en.wikipedia.org/wiki/2018_Russian_Grand_Prix">
+			<RaceName>Russian Grand Prix</RaceName>
+			<Circuit circuitId="sochi" url="http://en.wikipedia.org/wiki/Sochi_Autodrom">
+				<CircuitName>Sochi Autodrom</CircuitName>
+				<Location lat="43.4057" long="39.9578">
+					<Locality>Sochi</Locality>
+					<Country>Russia</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-09-30</Date>
+			<Time>11:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="17" url="http://en.wikipedia.org/wiki/2018_Japanese_Grand_Prix">
+			<RaceName>Japanese Grand Prix</RaceName>
+			<Circuit circuitId="suzuka" url="http://en.wikipedia.org/wiki/Suzuka_Circuit">
+				<CircuitName>Suzuka Circuit</CircuitName>
+				<Location lat="34.8431" long="136.541">
+					<Locality>Suzuka</Locality>
+					<Country>Japan</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-10-07</Date>
+			<Time>05:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="18" url="http://en.wikipedia.org/wiki/2018_United_States_Grand_Prix">
+			<RaceName>United States Grand Prix</RaceName>
+			<Circuit circuitId="americas" url="http://en.wikipedia.org/wiki/Circuit_of_the_Americas">
+				<CircuitName>Circuit of the Americas</CircuitName>
+				<Location lat="30.1328" long="-97.6411">
+					<Locality>Austin</Locality>
+					<Country>USA</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-10-21</Date>
+			<Time>18:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="19" url="http://en.wikipedia.org/wiki/2018_Mexican_Grand_Prix">
+			<RaceName>Mexican Grand Prix</RaceName>
+			<Circuit circuitId="rodriguez" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez">
+				<CircuitName>Autódromo Hermanos Rodríguez</CircuitName>
+				<Location lat="19.4042" long="-99.0907">
+					<Locality>Mexico City</Locality>
+					<Country>Mexico</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-10-28</Date>
+			<Time>19:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="20" url="http://en.wikipedia.org/wiki/2018_Brazilian_Grand_Prix">
+			<RaceName>Brazilian Grand Prix</RaceName>
+			<Circuit circuitId="interlagos" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace">
+				<CircuitName>Autódromo José Carlos Pace</CircuitName>
+				<Location lat="-23.7036" long="-46.6997">
+					<Locality>São Paulo</Locality>
+					<Country>Brazil</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-11-11</Date>
+			<Time>17:10:00Z</Time>
+		</Race>
+		<Race season="2018" round="21" url="http://en.wikipedia.org/wiki/2018_Abu_Dhabi_Grand_Prix">
+			<RaceName>Abu Dhabi Grand Prix</RaceName>
+			<Circuit circuitId="yas_marina" url="http://en.wikipedia.org/wiki/Yas_Marina_Circuit">
+				<CircuitName>Yas Marina Circuit</CircuitName>
+				<Location lat="24.4672" long="54.6031">
+					<Locality>Abu Dhabi</Locality>
+					<Country>UAE</Country>
+				</Location>
+			</Circuit>
+			<Date>2018-11-25</Date>
+			<Time>13:10:00Z</Time>
+		</Race>
+	</RaceTable>
+</MRData>

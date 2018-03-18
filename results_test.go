@@ -29,7 +29,7 @@ func TestLatest(t *testing.T) {
 	a, err := Latest()
 	assert.Nil(t, err)
 
-	assert.Equal(t, r.RaceTable.Race, a)
+	assert.Equal(t, r.Races[0], a)
 }
 
 func TestSpecificResult(t *testing.T) {
@@ -51,5 +51,5 @@ func TestSpecificResult(t *testing.T) {
 	a, err := SpecificResult(2017, 1)
 	assert.Nil(t, err)
 
-	assert.Equal(t, r.RaceTable.Race, a)
+	assert.Equal(t, r.Races[0], a)
 }

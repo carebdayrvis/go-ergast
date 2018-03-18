@@ -7,15 +7,11 @@ import (
 	"net/http"
 )
 
-var host string = "https://argast.com/api/v1"
+var host string = "https://ergast.com/api/f1"
 
 type mrdata struct {
-	XMLName   xml.Name `xml:"MRData"`
-	RaceTable RaceTable
-}
-
-type RaceTable struct {
-	Race Race
+	XMLName xml.Name `xml:"MRData"`
+	Races   []Race   `xml:"RaceTable>Race"`
 }
 
 type Race struct {
@@ -93,7 +89,7 @@ func Latest() (Race, error) {
 		return Race{}, err
 	}
 
-	return d.RaceTable.Race, nil
+	return d.Races[0], nil
 }
 
 // SpecificResult returns the results for a specific round in a specific season, e.g.: https://ergast.com/api/f1/2017/1/results
@@ -119,5 +115,5 @@ func SpecificResult(season int, round int) (Race, error) {
 		return Race{}, err
 	}
 
-	return d.RaceTable.Race, nil
+	return d.Races[0], nil
 }
