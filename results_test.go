@@ -53,3 +53,24 @@ func TestSpecificResult(t *testing.T) {
 
 	assert.Equal(t, r.Races[0], a)
 }
+
+func TestSpecificQualifying(t *testing.T) {
+	// read e
+	b, err := ioutil.ReadFile("./testdata/qualifying.xml")
+	assert.Nil(t, err)
+
+	// parse xml
+	r := mrdata{}
+	err = xml.Unmarshal(b, &r)
+	assert.Nil(t, err)
+
+	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Write(b)
+	}))
+	host = ts.URL
+
+	a, err := SpecificQualifying(2017, 1)
+	assert.Nil(t, err)
+
+	assert.Equal(t, r.Races[0], a)
+}

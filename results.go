@@ -15,13 +15,23 @@ type mrdata struct {
 }
 
 type Race struct {
-	Circuit     Circuit
-	Date        ErgastDate
-	Time        ErgastTime
-	RaceName    string
-	Season      int      `xml:"season,attr"`
-	Round       int      `xml:"round,attr"`
-	ResultsList []Result `xml:"ResultsList>Result"`
+	Circuit           Circuit
+	Date              ErgastDate
+	Time              ErgastTime
+	RaceName          string
+	Season            int                `xml:"season,attr"`
+	Round             int                `xml:"round,attr"`
+	Results           []Result           `xml:"ResultsList>Result"`
+	QualifyingResults []QualifyingResult `xml:"QualifyingList>QualifyingResult"`
+}
+
+type QualifyingResult struct {
+	Driver      Driver
+	Constructor Constructor
+	Q1          ErgastDuration
+	Q2          ErgastDuration
+	Q3          ErgastDuration
+	Position    int `xml:"position,attr"`
 }
 
 type Circuit struct {
@@ -118,4 +128,30 @@ func SpecificResult(season int, round int) (Race, error) {
 	}
 
 	return d.Races[0], nil
+}
+
+func SpecificQualifying(season int, round int) (Race, error) {
+	var path string = fmt.Sprintf("/%v/%v/qualifying", season, round)
+
+	resp, err := http.DefaultClient.Get(host + path)
+	if err != nil {
+		return Race{}, err
+	}
+
+	defer resp.Body.Close()
+
+	d := mrdata{}
+
+	b, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return Race{}, err
+	}
+
+	err = xml.Unmarshal(b, &d)
+	if err != nil {
+		return Race{}, err
+	}
+
+	return d.Races[0], nil
+
 }
